@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:myapp="http://schemas.android.com/apk/res/bjk.ftny"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF">
+
+	<com.admob.android.ads.AdView
+		android:id="@+id/ad"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		myapp:backgroundColor="#000000"
+		myapp:primaryTextColor="#FFFFFF"
+		myapp:secondaryTextColor="#CCCCCC"
+		myapp:keywords="Food Truck NYC" />
+
+	<TextView  
+    	android:id="@+id/lblIntro"
+	    android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	android:text="Loading."
+    	android:textColor="#000000" 
+    	android:gravity="center_horizontal"
+    	android:paddingBottom="7sp"
+    	android:paddingTop="7sp" />
+	
+	<ListView
+    	android:id="@+id/lstTrucks"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:drawSelectorOnTop="false" />
+    
+</LinearLayout>
